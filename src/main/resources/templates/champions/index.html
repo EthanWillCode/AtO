@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head"></head>
+
+<img class="img-fluid" th:src="@{/images/Across-the-Obelisk-Character-Heading.jpg}"/>
+
+<body class="container">
+
+<h1>Across the Obelisk</h1>
+<h3 th:text="${title}"></h3>
+
+<nav th:replace="fragments :: navbar"></nav>
+
+
+<div>
+
+    <h3 id="champ_header">Champions</h3>
+    <table class="table table-fixed">
+        <thead>
+        <tr>
+            <th class="bg-danger">Warriors</th>
+            <th class="bg-success">Scouts</th>
+            <th class="bg-primary">Mages</th>
+            <th class="table-light">Healers</th>
+        </tr>
+        </thead>
+        <tr>
+            <td class="bg-danger">
+                <a style="color:black" href="/champions/warriors/magnus">Magnus
+                    <img src="/images/champions/magnus/MagnusFull.PNG.webp" height="90" width="65"/>
+                </a>
+            </td>
+            <td class="bg-success">
+                <a style="color:black" href="/champions/warriors/andrin">Andrin
+                    <img src="/images/champions/andrin/AndrinFull.PNG.webp" height="90" width="65"/>
+                </a>
+            </td>
+            <td class="bg-primary">
+                <a style="color:black" href="/champions/warriors/evelyn">Evelyn
+                    <img src="/images/champions/evelyn/EvelynFull.PNG.webp" height="90" width="65"/>
+                </a>
+            </td>
+            <td class="table-light">
+                <a style="color:black" href="/champions/warriors/reginald">Reginald
+                    <img src="/images/champions/reginald/ReginaldFull.PNG.webp" height="90" width="65"/>
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="bg-danger">
+                <a style="color:black" href="/champions/warriors/heiner">Heiner
+                    <img src="/images/champions/heiner/HeinerFull.PNG.webp" height="90" width="65"/>
+                </a>
+            </td>
+
+            <td class="bg-success">
+                <a style="color:black" href="/champions/warriors/thuls">Thuls
+                    <img src="/images/champions/thuls/ThulsFull.PNG.webp" height="90" width="65"/>
+                </a>
+            </td>
+
+            <td class="bg-primary">
+                <a style="color:black" href="/champions/mages/cornelius">Cornelius
+                    <img src="/images/champions/cornelius/CorneliusFull.PNG.webp" height="90" width="65"/>
+                </a>
+            </td>
+            <td class="table-light">
+                <a style="color:black" href="/champions/healers/ottis">Ottis
+                    <img src="/images/champions/ottis/OttisBase.PNG" height="90" width="65"/>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td class="bg-danger">
+                <a style="color:black" href="/champions/warriors/grukli">Grukli
+                    <img src="/images//champions/grukli/GrukliFull.PNG.webp" height="90" width="65"/>
+                </a>
+            </td>
+
+            <td class="bg-success">
+                <a style="color:black" href="/champions/scouts/sylvie">Sylvie
+                    <img src="/images/champions/sylvie/Sylvie.webp" height="90" width="65"/>
+                </a>
+            </td>
+            <td class="bg-primary">
+                <a style="color:black" href="/champions/scouts/sylvie">Wilbur
+                    <img src="/images/champions/wilbur/Wilbur.webp" height="90" width="65"/>
+                </a>
+            </td>
+            <td class="table-light">
+                <a style="color:black" href="/champions/scouts/sylvie">Malukah
+                    <img src="/images/champions/malukah/MalukahFull.PNG.webp" height="90" width="65"/>
+                </a>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="bg-danger">
+                <a style="color:black" href="/champions/warriors/bree">Bree
+                    <img src="/images/champions/bree/BreeWolfWars.png" height="90" width="65"/>
+                </a>
+            </td>
+
+            <td class="bg-success">
+                <a style="color:black" href="/champions/scouts/gustav">Gustav
+                    <img src="/images/champions/gustav/Gustav.webp" height="90" width="65"/>
+                </a>
+            </td>
+            <td class="bg-primary">
+                <a style="color:black" href="/champions/mages/zek">Zek
+                    <img src="/images/champions/zek/ZekBase.webp" height="90" width="65"/>
+                </a>
+            </td>
+            <td class="table-light">
+                <a style="color:black" href="/champions/healers/nezglekt">Nezglekt
+                    <img src="/images/champions/nezglekt/NezglektBase.webp" height="90" width="65"/>
+                </a>
+            </td>
+        </tr>
+    </table>
+
+</div>
+<footer th:replace="fragments :: footer"></footer>
+</body>
+</html>

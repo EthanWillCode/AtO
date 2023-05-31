@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head">
+    <br/>
+<img class="img-fluid" th:src="@{/images/Forums-top-pic.jfif}"/>
+
+<body class="container">
+
+<h1>Across the Obelisk</h1>
+<h3 th:text="${title}"></h3>
+
+<nav th:replace="fragments :: navbar"></nav>
+
+<a href="/forums/create">Create Post</a>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Forum Post</th>
+    </tr>
+    </thead>
+    <tr th:each="forum : ${forumPost}">
+        <td th:text="${forum.post}"></td>
+    </tr>
+
+</table>
+
+<footer th:replace="fragments :: footer"></footer>
+</body>
+</html>
